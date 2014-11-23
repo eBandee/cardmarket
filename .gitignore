@@ -26,5 +26,12 @@ phpunit.phar
 # local phpunit config
 /phpunit.xml
 
-# db config
-config/db.php
+# Ingnore custom things
+/config/db.php
+/assets/*
+!/assets/AppAsset.php
+/web/assets/*
+!/web/assets/.gitignore
+/runtime/*
+!/runtime/.gitignore
+/composer.lock
