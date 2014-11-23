@@ -1,89 +1,41 @@
-Yii 2 Basic Application Template
-================================
+Erram's Cardmarket
+==================
 
-Yii 2 Basic Application Template is a skeleton Yii 2 application best for
-rapidly creating small projects.
+http://hipsum.co/
 
-The template contains the basic features including user login/logout and a contact page.
-It includes all commonly used configurations that would allow you to focus on adding new
-features to your application.
+Before they sold out sustainable messenger bag, Tumblr iPhone mumblecore
+synth bitters narwhal leggings cornhole Portland beard. Umami pork
+belly skateboard, flannel Portland four dollar toast banjo. Kitsch
+semiotics messenger bag locavore Pinterest fingerstache. Cliche pickled
+PBR biodiesel chillwave. Typewriter yr flexitarian crucifix, aesthetic pop-up
+Tumblr ugh banh mi paleo lomo shabby chic Tonx organic chillwave. Echo Park
+iPhone Blue Bottle, cliche yr four dollar toast beard stumptown McSweeney's squid
+slow-carb readymade sartorial Pitchfork wolf. Fap ethical tousled, iPhone Bushwick
+XOXO pug vegan Odd Future banjo plaid post-ironic.
 
+Telepítés
+---------
 
-DIRECTORY STRUCTURE
--------------------
+Ide írjuk le, hogy a különböző oprendszereken hogyan kell telepíteni az alkalmazást.
 
-      assets/             contains assets definition
-      commands/           contains console commands (controllers)
-      config/             contains application configurations
-      controllers/        contains Web controller classes
-      mail/               contains view files for e-mails
-      models/             contains model classes
-      runtime/            contains files generated during runtime
-      tests/              contains various tests for the basic application
-      vendor/             contains dependent 3rd-party packages
-      views/              contains view files for the Web application
-      web/                contains the entry script and Web resources
+### Ubuntu/Debian
 
-
-
-REQUIREMENTS
-------------
-
-The minimum requirement by this application template that your Web server supports PHP 5.4.0.
-
-
-INSTALLATION
-------------
-
-### Install from an Archive File
-
-Extract the archive file downloaded from [yiiframework.com](http://www.yiiframework.com/download/) to
-a directory named `basic` that is directly under the Web root.
-
-You can then access the application through the following URL:
-
-~~~
-http://localhost/basic/web/
-~~~
-
-
-### Install via Composer
-
-If you do not have [Composer](http://getcomposer.org/), you may install it by following the instructions
-at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
-
-You can then install this application template using the following command:
-
-~~~
-php composer.phar global require "fxp/composer-asset-plugin:1.0.0-beta3"
-php composer.phar create-project --prefer-dist --stability=dev yiisoft/yii2-app-basic basic
-~~~
-
-Now you should be able to access the application through the following URL, assuming `basic` is the directory
-directly under the Web root.
-
-~~~
-http://localhost/basic/web/
-~~~
-
-
-CONFIGURATION
--------------
-
-### Database
-
-Edit the file `config/db.php` with real data, for example:
-
-```php
-return [
-    'class' => 'yii\db\Connection',
-    'dsn' => 'mysql:host=localhost;dbname=yii2basic',
-    'username' => 'root',
-    'password' => '1234',
-    'charset' => 'utf8',
-];
+```sh
+cd ~
+curl -sS https://getcomposer.org/installer | php
+sudo mv composer.phar /usr/local/bin/composer
+git clone git@github.com:eBandee/cardmarket.git
+cd ./cardmarket
+composer install
+cp config/db.php.example config/db.php # db.php-t értelemszerűen ki kell tölteni
 ```
 
-**NOTE:** Yii won't create the database for you, this has to be done manually before you can access it.
+### Windows
 
-Also check and edit the other files in the `config/` directory to customize your application.
+### OSX
+
+Konvenciók
+----------
+
+Ide majd gyűjtögetjük az idők során, hogy mikre kell odafigyelni a kódolás közben.
+Formázás, szemantika, struktúra...
