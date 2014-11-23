@@ -21,13 +21,19 @@ Ide írjuk le, hogy a különböző oprendszereken hogyan kell telepíteni az al
 ### Ubuntu/Debian
 
 ```sh
-cd ~
+cd /var/www
+
 curl -sS https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/composer
+
 git clone git@github.com:eBandee/cardmarket.git
+
 cd ./cardmarket
 composer install
+
 cp config/db.php.example config/db.php # db.php-t értelemszerűen ki kell tölteni
+
+./yiic migrate/up
 ```
 
 ### Windows
