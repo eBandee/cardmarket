@@ -28,9 +28,4 @@ phpunit.phar
 
 # Ingnore custom things
 /config/db.php
-/**/assets/**
-/**/runtime/**
 /composer.lock
-!/**/assets/.gitignore
-!/**/runtime/.gitignore
-!/assets/AppAsset.php
